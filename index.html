@@ -464,6 +464,7 @@
               :src="project.img"
               :alt="project.alt"
               class="rounded-xl w-full"
+              loading="lazy"
             />
             <div class="flex flex-col gap-3">
               <span
@@ -504,7 +505,7 @@
           </span>
         </div>
         <a
-          href="/blog"
+          href="./blog"
           class="hidden lg:flex gap-2 w-[13rem] border hover:border-white hover:border-2 duration-200 justify-center relative z-10 cardBlurBg text-white h-[5rem] text-2xl items-center rounded-full group"
         >
           <span class="group-hover:translate-x-0 translate-x-4 duration-300">
@@ -514,6 +515,7 @@
             src="./assets/images/icon/arrow-circle-right.svg"
             alt="arrowIcon"
             class="invisible invert opacity-0 group-hover:visible group-hover:opacity-100 duration-300"
+            loading="lazy"
           />
         </a>
       </div>
@@ -552,6 +554,7 @@
                 :src="article.img"
                 :alt="article.alt"
                 class="rounded-2xl aspect-video"
+                loading="lazy"
               />
               <h2 class="text-2xl" x-text="article.title"></h2>
               <p class="text-base" x-text="article.description"></p>
@@ -645,6 +648,7 @@
             src="/assets/images/icon/arrow-circle-right.svg"
             alt="arrowIcon"
             class="invisible opacity-0 group-hover:visible group-hover:opacity-100 duration-300"
+            loading="lazy"
           />
         </button>
       </div>
