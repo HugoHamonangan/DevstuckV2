@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../assets/css/output.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Devstuck - blog - Popular JavaScript Frameworks</title>
+  </head>
+  <body class="bg-gray-900">
+    <!-- Navbar -->
+    <nav
+      id="navbar"
+      class="fixed px-4 sm:px-9 w-full top-0 z-50 duration-200 navbar opacity-100 py-8 bg-gray-900"
+    >
+      <div
+        class="justify-between flex mx-auto px-4 sm:px-9 items-center max-w-3xl"
+      >
+        <a
+          href="/blog"
+          class="flex gap-2 w-[9rem] justify-center relative z-10 bg-white text-black py-2 text-xl px-2 items-center rounded-full group contact-us"
+        >
+          <img
+            src="../assets/images/icon/arrow-circle-right.svg"
+            alt="arrowIcon"
+            class="invisible opacity-0 group-hover:visible group-hover:opacity-100 duration-300 rotate-180 transform"
+          />
+          <span
+            class="group-hover:translate-x-0 -translate-x-4 translate-y-0.5 duration-300"
+            >Back</span
+          >
+        </a>
+        <div class="flex gap-2 items-center">
+          <img
+            src="../assets/images/image/devstuckbg.png"
+            alt="LogoDevstuck"
+            class="w-[4rem]"
+          />
+          <span class="text-white text-xl font-black">DEVSTUCK.</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="flex flex-col pt-[8rem] container px-8 max-w-3xl mx-auto">
+      <header class="text-center mb-8">
+        <h1 class="text-4xl font-extrabold text-gray-200">
+          Popular JavaScript Frameworks for Modern Web Development
+        </h1>
+        <p class="text-lg text-gray-200 mt-4">
+          A comprehensive look at some of the most popular JavaScript frameworks
+          and libraries that are shaping the modern web development landscape.
+        </p>
+      </header>
+
+      <!-- Featured Image -->
+      <img
+        src="../assets/images/image/js-framework-cover.jpg"
+        alt="JavaScript Frameworks"
+        class="w-full rounded-lg shadow-lg mb-8"
+      />
+
+      <!-- Article Content -->
+      <section>
+        <p class="text-lg text-gray-400 mb-4 leading-8">
+          JavaScript frameworks have become an essential part of web
+          development, providing developers with pre-built libraries and tools
+          to streamline the creation of interactive and dynamic websites. With a
+          multitude of frameworks available today, each catering to different
+          needs, it can be overwhelming to choose the right one. This article
+          explores some of the most popular JavaScript frameworks, their key
+          features, and the pros and cons of each.
+        </p>
+
+        <h2 class="text-2xl font-semibold text-gray-200 mt-6 mb-4 leading-8">
+          React.js: The JavaScript Library for Building User Interfaces
+        </h2>
+        <p class="text-lg text-gray-400 mb-4 leading-8">
+          Developed by Facebook, React.js is a powerful JavaScript library
+          primarily used for building user interfaces, especially single-page
+          applications (SPAs). It allows developers to create reusable UI
+          components, making the development process more efficient. React uses
+          a virtual DOM (Document Object Model) to improve performance by
+          updating only the parts of the web page that have changed.
+        </p>
+
+        <h3 class="text-xl font-semibold text-gray-200 mt-4 mb-2 leading-8">
+          Pros
+        </h3>
+        <ul class="text-lg text-gray-400 mb-4 leading-8">
+          <li>Great for building dynamic and responsive UIs.</li>
+          <li>Reusability of components makes code more maintainable.</li>
+          <li>Large community with extensive resources and support.</li>
+          <li>Fast rendering thanks to the virtual DOM.</li>
+          <li>
+            Can be used for both web and mobile development (via React Native).
+          </li>
+        </ul>
+
+        <h3 class="text-xl font-semibold text-gray-200 mt-4 mb-2 leading-8">
+          Cons
+        </h3>
+        <ul class="text-lg text-gray-400 mb-4 leading-8">
+          <li>
+            Not a full framework—React is primarily a library focused on the
+            view layer, requiring other tools for complete solutions.
+          </li>
+          <li>
+            Learning curve can be steep, especially with JSX and state
+            management libraries like Redux.
+          </li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold text-gray-200 mt-6 mb-4 leading-8">
+          Angular: A Full-Featured Framework for Building Scalable Apps
+        </h2>
+        <p class="text-lg text-gray-400 mb-4 leading-8">
+          Developed by Google, Angular is a comprehensive framework designed to
+          build dynamic web applications. It provides a full set of tools and
+          features for building robust applications, including routing, form
+          handling, HTTP client, and more. Angular's use of TypeScript offers
+          type safety and enhanced tooling, making it a popular choice for
+          large-scale enterprise applications.
+        </p>
+
+        <h3 class="text-xl font-semibold text-gray-200 mt-4 mb-2 leading-8">
+          Pros
+        </h3>
+        <ul class="text-lg text-gray-400 mb-4 leading-8">
+          <li>
+            Complete, full-featured framework with everything you need to build
+            a web application.
+          </li>
+          <li>Excellent for building large-scale, complex applications.</li>
+          <li>
+            Strong support for TypeScript, improving maintainability and
+            developer productivity.
+          </li>
+          <li>
+            Two-way data binding simplifies the synchronization of models and
+            views.
+          </li>
+        </ul>
+
+        <h3 class="text-xl font-semibold text-gray-200 mt-4 mb-2 leading-8">
+          Cons
+        </h3>
+        <ul class="text-lg text-gray-400 mb-4 leading-8">
+          <li>Steep learning curve, especially for beginners.</li>
+          <li>Can be overkill for small to medium-sized projects.</li>
+          <li>
+            Performance can be an issue for complex UIs with large datasets.
+          </li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold text-gray-200 mt-6 mb-4 leading-8">
+          Vue.js: The Progressive Framework for Building UIs
+        </h2>
+        <p class="text-lg text-gray-400 mb-4 leading-8">
+          Vue.js is a progressive JavaScript framework that focuses on building
+          user interfaces and single-page applications. It is known for its
+          simplicity, ease of integration, and flexibility. Vue's ecosystem is
+          also modular, meaning you can gradually adopt its features into an
+          existing project. Vue has a small learning curve and is often praised
+          for its straightforward syntax and well-organized documentation.
+        </p>
+
+        <h3 class="text-xl font-semibold text-gray-200 mt-4 mb-2 leading-8">
+          Pros
+        </h3>
+        <ul class="text-lg text-gray-400 mb-4 leading-8">
+          <li>Simple and easy to integrate into existing projects.</li>
+          <li>Small size and fast rendering.</li>
+          <li>
+            Flexible and can be used for small projects or large-scale apps.
+          </li>
+          <li>Clear and concise documentation.</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold text-gray-200 mt-4 mb-2 leading-8">
+          Cons
+        </h3>
+        <ul class="text-lg text-gray-400 mb-4 leading-8">
+          <li>Smaller community compared to React and Angular.</li>
+          <li>
+            Limited corporate backing (not as widely adopted in large
+            enterprises as Angular or React).
+          </li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold text-gray-200 mt-6 mb-4 leading-8">
+          Svelte: The Compiler That Converts Components into Efficient
+          JavaScript
+        </h2>
+        <p class="text-lg text-gray-400 mb-4 leading-8">
+          Unlike other frameworks, Svelte shifts much of the work from the
+          browser to compile time. Instead of using a virtual DOM, Svelte
+          compiles your app into efficient JavaScript code that directly
+          manipulates the DOM. This results in faster load times and improved
+          performance. Svelte's syntax is simple and easy to understand, making
+          it an appealing option for developers who want to focus more on
+          building their app rather than managing complex frameworks.
+        </p>
+
+        <h3 class="text-xl font-semibold text-gray-200 mt-4 mb-2 leading-8">
+          Pros
+        </h3>
+        <ul class="text-lg text-gray-400 mb-4 leading-8">
+          <li>Faster performance thanks to the absence of a virtual DOM.</li>
+          <li>Smaller bundle sizes compared to other frameworks.</li>
+          <li>Simpler, more concise syntax that reduces boilerplate code.</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold text-gray-200 mt-4 mb-2 leading-8">
+          Cons
+        </h3>
+        <ul class="text-lg text-gray-400 mb-4 leading-8">
+          <li>Still a relatively new framework with a smaller community.</li>
+          <li>
+            Fewer third-party libraries and tools available compared to other
+            frameworks.
+          </li>
+        </ul>
+
+        <p class="text-lg text-gray-400 mb-4 leading-8">
+          Each of these JavaScript frameworks has its strengths and weaknesses,
+          and the choice of framework depends on the specific requirements of
+          the project. React, Angular, Vue, and Svelte are all excellent options
+          for building dynamic web applications, but developers should carefully
+          evaluate their needs in terms of scalability, performance, and
+          developer experience before making a decision.
+        </p>
+
+        <p class="text-lg text-gray-400 mb-4 leading-8">
+          As the JavaScript ecosystem continues to evolve, these frameworks will
+          play a key role in shaping the future of web development. Stay tuned
+          for more updates and in-depth comparisons on the latest technologies
+          in web development.
+        </p>
+      </section>
+      <div class="flex justify-between items-center mt-7">
+        <a
+          href="/blog/ai-vs-machine-learning.html"
+          class="flex gap-2 w-[12rem] justify-center relative z-10 bg-white text-black py-1 text-xl px-2 items-center rounded-full group contact-us"
+        >
+          <img
+            src="../assets/images/icon/arrow-circle-right.svg"
+            alt="arrowIcon"
+            class="invisible opacity-0 group-hover:visible group-hover:opacity-100 duration-300 rotate-180 transform"
+          />
+          <span
+            class="group-hover:translate-x-0 -translate-x-4 translate-y-0.5 duration-300"
+            >Previous Blog</span
+          >
+        </a>
+        <a
+          href="/blog/ai-in-web-development.html"
+          class="flex gap-2 w-[10rem] justify-center relative z-10 bg-white text-black py-1 text-xl px-2 items-center rounded-full group contact-us"
+        >
+          <span
+            class="group-hover:translate-x-0 translate-x-4 translate-y-0.5 duration-300"
+            >Next Blog</span
+          >
+          <img
+            src="../assets/images/icon/arrow-circle-right.svg"
+            alt="arrowIcon"
+            class="invisible opacity-0 group-hover:visible group-hover:opacity-100 duration-300 transform"
+          />
+        </a>
+      </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2025 Devstuck. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      const lenis = new Lenis();
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+      requestAnimationFrame(raf);
+    </script>
+  </body>
+</html>

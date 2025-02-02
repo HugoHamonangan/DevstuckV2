@@ -1,0 +1,65 @@
+:root {
+  --foreground: #f5f5f5;
+  --background: #1b1b1b;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Archivo', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+
+* {
+  font-family: 'Archivo', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+.font-archivo {
+  font-family: 'Archivo Black', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.blurBg {
+  background: rgba(0, 0, 0, 0.341);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.237);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 10px;
+}
+
+.cardBlurBg {
+  background: rgba(44, 44, 44, 0);
+
+  backdrop-filter: blur(14.5px);
+  -webkit-backdrop-filter: blur(14.5px);
+  border: 1px solid #4a4a4a;
+}
+
+.customShadow {
+  box-shadow: rgba(37, 6, 209, 0.135) 0px 48px 100px 0px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}

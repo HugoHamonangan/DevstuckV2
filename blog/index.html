@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../assets/css/output.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav
+      id="navbar"
+      class="fixed px-4 sm:px-9 w-full top-0 z-50 duration-200 navbar opacity-100 py-8"
+    >
+      <div
+        class="justify-between flex mx-auto px-4 sm:px-9 items-center max-w-[1320px]"
+      >
+        <a
+          href="/"
+          class="flex gap-2 w-[9rem] justify-center relative z-10 bg-white text-black py-2 text-xl px-2 items-center rounded-full group contact-us"
+        >
+          <img
+            src="../assets/images/icon/arrow-circle-right.svg"
+            alt="arrowIcon"
+            class="invisible opacity-0 group-hover:visible group-hover:opacity-100 duration-300 rotate-180 transform"
+          />
+          <span
+            class="group-hover:translate-x-0 -translate-x-4 translate-y-0.5 duration-300"
+            >Back</span
+          >
+        </a>
+        <div class="flex gap-2 items-center">
+          <img
+            src="../assets/images/image/devstuckbg.png"
+            alt="LogoDevstuck"
+            class="w-[4rem]"
+          />
+          <span class="text-white text-xl font-black">DEVSTUCK.</span>
+        </div>
+      </div>
+    </nav>
+    <section
+      id="blog"
+      class="relative max-w-[1320px] mx-auto pt-[7rem] sm:pt-[10rem] flex flex-col gap-4 px-4 sm:px-9"
+      x-data="{ 
+    blogs: [
+      { title: 'Popular JavaScript Frameworks', img: '../assets/images/image/js-framework-cover.jpg', link: './popular-javascript-framework-for-web-dev.html', description: 'JavaScript frameworks are essential for web development. They provide developers with a structure...' },
+      { title: 'AI in Web Development', img: '../assets/images/image/ai-in-web-development-cover.jpg', link: './ai-in-web-development.html', description: 'Artificial Intelligence (AI) has found its way into many industries, and web development is no exception.' },
+      { title: 'AI vs Machine Learning', img: '../assets/images/image/ai-vs-ml-cover.webp', link: '', description: 'Artificial Intelligence (AI) and Machine Learning (ML) are two of the most transformative technologies in today’s world' }
+    ] 
+  }"
+    >
+      <div
+        class="bg-[#9570fb88] size-80 absolute -left-[27rem] blur-[80px] shadow-[0_0_50px_#0600FF]"
+      ></div>
+      <div
+        class="bg-[#5e29f188] size-80 absolute top-1/2 -right-[27rem] blur-[80px] shadow-[0_0_50px_#0600FF]"
+      ></div>
+      <div
+        class="grid grid-cols-[repeat(auto-fit,_minmax(20rem,_1fr))] gap-8 w-full"
+      >
+        <template x-for="blog in blogs" :key="blog.title">
+          <div
+            class="w-full hover:scale-105 duration-200 cursor-pointer h-auto p-4 rounded-2xl cardBlurBg flex flex-col"
+          >
+            <a :href="blog.link" class="space-y-6 block flex-grow">
+              <img
+                :src="blog.img"
+                :alt="blog.title"
+                class="rounded-2xl aspect-video"
+              />
+              <h2 class="text-2xl" x-text="blog.title"></h2>
+              <p class="text-base" x-text="blog.description"></p>
+            </a>
+          </div>
+        </template>
+      </div>
+    </section>
+  </body>
+</html>
